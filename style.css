@@ -1,0 +1,187 @@
+#grid {
+display: grid;
+place-content: left;
+grid-template-columns: repeat(4,0fr);
+grid-gap: 1px;
+}
+
+body {
+    background-color:peru ;
+}
+
+h1 img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.row{
+    display: flex;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: darkgreen;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#line-button-0{
+    width: 60px;
+    height: 50px;
+    margin-top: 50%;
+}
+#line-button-1{
+    width: 60px;
+    height: 50px;
+    margin-top: 50%;
+}
+#line-button-2{
+    width: 60px;
+    height: 50px;
+    margin-top: 50%;
+}
+#line-button-3{
+    width: 60px;
+    height: 50px;
+    margin-left: 20%;
+}
+#line-button-4{
+    width: 60px;
+    height: 50px;
+    margin-left: 20%;
+}
+#line-button-5{
+    width: 60px;
+    height: 50px;
+    margin-left: 20%;
+}
+#line-button-6{
+    width: 60px;
+    height: 50px;
+
+}
+#line-button-7{
+    width: 60px;
+    height: 50px;
+
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+td {
+    text-align: center;
+}
+
+
+td[scope="gil"] {
+    text-align: right;
+}
+
+
+tr:nth-child(1) {
+    background-color:red ;
+}
+
+#s6{
+    background-color:chocolate;
+}
+#s7{
+    background-color:chocolate ;
+}
+#s8{
+    background-color:chocolate ;
+}
+#s9{
+    background-color:chocolate ;
+}
+#s10{
+    background-color:chocolate ;
+}
+#s11{
+    background-color:chocolate ;
+}
+#s12{
+    background-color:chocolate ;
+}
+#s13{
+    background-color:chocolate ;
+}
+#s14{
+    background-color:chocolate ;
+}
+#s15{
+    background-color:chocolate ;
+}
+#s16{
+    background-color:chocolate ;
+}
+#s17{
+    background-color:chocolate ;
+}
+#s18{
+    background-color:chocolate ;
+}
+#s19{
+    background-color:chocolate ;
+}
+#s20{
+    background-color:chocolate ;
+}
+#s21{
+    background-color:chocolate ;
+}
+#s22{
+    background-color:chocolate ;
+}
+#s23{
+    background-color:chocolate ;
+}
+#s24{
+    background-color:chocolate ;
+}
+
+#line-button-8 {
+    width: 100px;
+    height: 50px;
+    margin-left: 200px;
+}
+
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+
+.scorebord1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.scorebord2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.selectline{
+    position: relative;
+}
+
