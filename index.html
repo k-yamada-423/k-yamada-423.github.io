@@ -1,1 +1,136 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>くじテンダー</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1><img src="character_saboten.png">ミニくじテンダー<img src="plant_cactus.png"></h1>
+      <div id="score">
+         <p> 現在のポイント：<span id="point">0</span></p>
+         <p>合計ポイント： <span id="totalpoint">0</span></p>
+         </h2>
+      </div>
+      <main>
+      <div class="row">
+      <div id="grid">
+        <button id="line-button-6" onmouseover="pointerin([0, 4, 8])" onmouseout="pointerout([0, 4, 8])" onclick="pointresult(6)">↘</button>
+        <button id="line-button-3" onmouseover="pointerin([0, 3, 6])" onmouseout="pointerout([0, 3, 6])" onclick="pointresult(3)">↓</button>
+        <button id="line-button-4" onmouseover="pointerin([1, 4, 7])" onmouseout="pointerout([1, 4, 7])" onclick="pointresult(4)">↓</button>
+        <button id="line-button-5" onmouseover="pointerin([2, 5, 8])" onmouseout="pointerout([2, 5, 8])" onclick="pointresult(5)">↓</button>
+        <button id="line-button-0" onmouseover="pointerin([0, 1, 2])" onmouseout="pointerout([0, 1, 2])" onclick="pointresult(0)">→</button>
+        <div class="cell" onclick="cellclick(0)"></div>
+        <div class="cell" onclick="cellclick(1)"></div>
+        <div class="cell" onclick="cellclick(2)"></div>
+        <button id="line-button-1" onmouseover="pointerin([3, 4, 5])" onmouseout="pointerout([3, 4, 5])" onclick="pointresult(1)">→</button>
+        <div class="cell" onclick="cellclick(3)"></div>
+        <div class="cell" onclick="cellclick(4)"></div>
+        <div class="cell" onclick="cellclick(5)"></div>
+        <button id="line-button-2" onmouseover="pointerin([6, 7, 8])" onmouseout="pointerout([6, 7, 8])" onclick="pointresult(2)">→</button>
+        <div class="cell" onclick="cellclick(6)"></div>
+        <div class="cell" onclick="cellclick(7)"></div>
+        <div class="cell" onclick="cellclick(8)"></div>
+        <button id="line-button-7" onmouseover="pointerin([6, 4, 2])" onmouseout="pointerout([6, 4, 2])" onclick="pointresult(7)">↗</button>
+      </div>
+      <div class="scorebord1">
+        <table>
+          <tr>
+            <th>数字の合計</th>
+            <th>獲得ポイント</th>
+          </tr>
+          <tr id="s6">
+            <td>6</td>
+            <td scope="gil">10000</td>
+          </tr>
+          <tr id="s7">
+            <td>7</td>
+            <td scope="gil">36</td>
+          </tr>
+          <tr id="s8">
+            <td>8</td>
+            <td scope="gil">72</td>
+          </tr>
+          <tr id="s9">
+            <td>9</td>
+            <td scope="gil">360</td>
+          </tr>
+          <tr id="s10">
+            <td>10</td>
+            <td scope="gil">80</td>
+          </tr>
+          <tr id="s11">
+            <td>11</td>
+            <td scope="gil">252</td>
+          </tr>
+          <tr id="s12">
+            <td>12</td>
+            <td scope="gil">108</td>
+          </tr>
+          <tr id="s13">
+            <td>13</td>
+            <td scope="gil">72</td>
+          </tr>
+          <tr id="s14">
+            <td>14</td>
+            <td scope="gil">54</td>
+          </tr>
+          <tr id="s15">
+            <td>15</td>
+            <td scope="gil">180</td>
+          </tr>
+        </table>
+        </div>
+        <div class="scorebord2">
+        <table>
+          <tr>
+            <th>数字の合計</th>
+            <th>獲得ポイント</th>
+          </tr>
+          <tr id="s16">
+            <td>16</td>
+            <td scope="gil">72</td>
+          </tr>
+          <tr id="s17">
+            <td>17</td>
+            <td scope="gil">180</td>
+          </tr>
+          <tr id="s18">
+            <td>18</td>
+            <td scope="gil">119</td>
+          </tr>
+          <tr id="s19">
+            <td>19</td>
+            <td scope="gil">36</td>
+          </tr>
+          <tr id="s20">
+            <td>20</td>
+            <td scope="gil">306</td>
+          </tr>
+          <tr id="s21">
+            <td>21</td>
+            <td scope="gil">1080</td>
+          </tr>
+          <tr id="s22">
+            <td>22</td>
+            <td scope="gil">144</td>
+          </tr>
+          <tr id="s23">
+            <td>23</td>
+            <td scope="gil">1800</td>
+          </tr>
+          <tr id="s24">
+            <td>24</td>
+            <td scope="gil">3600</td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <div>
+      <button id="line-button-8" onclick="roundplay()">2回目！</button>
+    </div>
+      </main>
+      <script src="main.js"></script>
+    </body>
+</html>
